@@ -15,7 +15,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&address, "address", "localhost:6246", "redis address")
+	flag.StringVar(&address, "address", "localhost:6379", "redis address")
 	flag.StringVar(&key, "key", "__KEY__", "key")
 	flag.IntVar(&count, "count", 10, "scan command count parameter")
 	flag.Parse()
